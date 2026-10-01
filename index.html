@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Properties | Faridabad Real Estate</title>
+  
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <nav class="navbar">
+    <div class="brand">
+      <i class="fa-solid fa-building-circle-check"></i> Star <span>Properties</span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-nilesh">About Nilesh</a></li>
+      <li><a href="#properties">Properties</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Dark/Light Theme Switcher -->
+      <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+
+      <a href="tel:9599634332" class="btn-nav">
+        <i class="fa-solid fa-phone"></i> 9599634332
+      </a>
+
+      <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <h1>Star Properties Faridabad</h1>
+    <p>Sell, Purchase & Rent Deals in 1 to 4 BHK Flats, Builder Floors, Luxury Apartments & Commercial Warehouses across all Faridabad Sectors.</p>
+    
+    <div class="filter-container">
+      <button class="filter-btn active" onclick="filterProperties('all', event)">All Deals</button>
+      <button class="filter-btn" onclick="filterProperties('1bhk', event)">1 BHK</button>
+      <button class="filter-btn" onclick="filterProperties('2bhk', event)">2 BHK</button>
+      <button class="filter-btn" onclick="filterProperties('3bhk', event)">3 BHK</button>
+      <button class="filter-btn" onclick="filterProperties('4bhk', event)">4 BHK</button>
+      <button class="filter-btn" onclick="filterProperties('commercial', event)">Commercial & Warehouse</button>
+    </div>
+  </header>
+
+  <!-- About Nilesh Profile Spotlight -->
+  <section id="about-nilesh" style="padding: 0 20px;">
+    <div class="nilesh-spotlight">
+      <div class="nilesh-grid">
+        <div class="nilesh-avatar-box">
+          <div class="nilesh-avatar">
+            <!-- <img src="./dp.jpeg" alt="Nilesh Ji"> -->
+          </div>
+          <h3>Nilesh</h3>
+          <p>Senior Manager & Property Director</p>
+        </div>
+        <div class="nilesh-details">
+          <h2>About Nilesh & Star Properties</h2>
+          <p>Star Properties is <strong>managed by Nilesh</strong>, operating out of <strong>Shop No. 274, Sector 10 HBC, Faridabad</strong>. With deep domain experience across both residential and commercial real estate, Nilesh Ji assists clients in buying, selling, and renting properties with 100% legal verification and complete paperwork transparency.</p>
+          
+          <div class="nilesh-features">
+            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> All Faridabad Sectors (1–89) Specialist</div>
+            <div class="feature-item"><i class="fa-solid fa-file-shield"></i> Verified Legal Paperwork Support</div>
+            <div class="feature-item"><i class="fa-solid fa-handshake-simple"></i> Transparent Dealings (Managed by Nilesh)</div>
+            <div class="feature-item"><i class="fa-solid fa-car"></i> On-Demand Property Site Visits</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Available Properties Section (Enhanced for Laptop Views) -->
+  <main class="container" id="properties">
+    <div class="properties-header-bar">
+      <h2 class="section-title">Verified Available Properties</h2>
+      <p class="section-subtitle">Explore prime residential floors, flats, and commercial properties in Faridabad</p>
+    </div>
+    <div class="grid" id="property-grid"></div>
+  </main>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Complete Real Estate services for Buying, Selling, and Renting residential & commercial properties in Faridabad, Haryana.</p>
+        
+        <ul class="info-list">
+          <li><i class="fa-solid fa-user-check"></i> <div><strong>Managed By:</strong> Nilesh (Senior Manager)</div></li>
+          <li><i class="fa-solid fa-phone"></i> <div><strong>Phone / WhatsApp:</strong> +91 9599634332</div></li>
+          <li><i class="fa-solid fa-location-dot"></i> <div><strong>Office Address:</strong> Shop No. 274, Sector 10 Housing Board Market, Pocket G, Sector 10 DLF, Faridabad, Haryana 121006</div></li>
+          <li><i class="fa-solid fa-handshake"></i> <div><strong>Deals In:</strong> Sell, Purchase & Rent</div></li>
+          <li><i class="fa-solid fa-city"></i> <div><strong>Coverage:</strong> All Faridabad Sectors (Sector 1-89, Greater Faridabad / Neharpar, NIT)</div></li>
+        </ul>
+      </div>
+
+      <div class="inquiry-box">
+        <h4>Need Property Consultation?</h4>
+        <p>Send a direct WhatsApp message to Nilesh Ji for instant site visits and price quotes.</p>
+        <a href="https://wa.me/919599634332?text=Hi%20Nilesh%20Ji,%20I%20am%20looking%20for%20Sell/Purchase/Rent%20deals%20in%20Faridabad." 
+           target="_blank" 
+           class="btn btn-whatsapp full-width">
+          <i class="fa-brands fa-whatsapp"></i> Contact Nilesh on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; Star Properties | Managed by Nilesh | Office: Shop No. 274, Sector 10 HBC, Faridabad | Phone: +91 9599634332</p>
+      <p class="developer-credit">
+        Designed & Developed with ❤️ by <span>abhishek</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Detail Modal -->
+  <div class="modal" id="property-modal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="./script.js"></script>
+</body>
+</html>
