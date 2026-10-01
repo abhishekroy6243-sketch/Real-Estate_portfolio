@@ -2,19 +2,19 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Star Properties | Faridabad Real Estate</title>
   
-  <!-- Fonts & Icons -->
+  <!-- Google Fonts & Font Awesome Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
-  <!-- Custom CSS -->
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header / Navbar -->
+  <!-- Top Navbar -->
   <nav class="navbar">
     <div class="brand">
       <i class="fa-solid fa-building-circle-check"></i> Star <span>Properties</span>
@@ -28,15 +28,17 @@
     </ul>
 
     <div class="nav-actions">
-      <!-- Dark/Light Theme Switcher -->
+      <!-- Dark/Light Theme Toggle -->
       <button class="theme-toggle-btn" id="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
         <i class="fa-solid fa-moon"></i>
       </button>
 
-      <a href="tel:9599634332" class="btn-nav">
-        <i class="fa-solid fa-phone"></i> 9599634332
+      <!-- Call Action Button (Circular icon on mobile, full on desktop) -->
+      <a href="tel:9599634332" class="btn-nav phone-btn" title="Call Nilesh Ji">
+        <i class="fa-solid fa-phone"></i> <span class="phone-text">9599634332</span>
       </a>
 
+      <!-- Mobile Menu Hamburger -->
       <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
         <i class="fa-solid fa-bars"></i>
       </button>
@@ -45,46 +47,48 @@
 
   <!-- Hero Section -->
   <header class="hero" id="home">
-    <h1>Star Properties Faridabad</h1>
-    <p>Sell, Purchase & Rent Deals in 1 to 4 BHK Flats, Builder Floors, Luxury Apartments & Commercial Warehouses across all Faridabad Sectors.</p>
-    
-    <div class="filter-container">
-      <button class="filter-btn active" onclick="filterProperties('all', event)">All Deals</button>
-      <button class="filter-btn" onclick="filterProperties('1bhk', event)">1 BHK</button>
-      <button class="filter-btn" onclick="filterProperties('2bhk', event)">2 BHK</button>
-      <button class="filter-btn" onclick="filterProperties('3bhk', event)">3 BHK</button>
-      <button class="filter-btn" onclick="filterProperties('4bhk', event)">4 BHK</button>
-      <button class="filter-btn" onclick="filterProperties('commercial', event)">Commercial & Warehouse</button>
+    <div class="hero-content">
+      <h1>Star Properties Faridabad</h1>
+      <p>Sell, Purchase & Rent Deals in 1 to 4 BHK Flats, Builder Floors, Luxury Apartments & Commercial Warehouses across all Faridabad Sectors.</p>
+      
+      <div class="filter-container">
+        <button class="filter-btn active" onclick="filterProperties('all', event)">All Deals</button>
+        <button class="filter-btn" onclick="filterProperties('1bhk', event)">1 BHK</button>
+        <button class="filter-btn" onclick="filterProperties('2bhk', event)">2 BHK</button>
+        <button class="filter-btn" onclick="filterProperties('3bhk', event)">3 BHK</button>
+        <button class="filter-btn" onclick="filterProperties('4bhk', event)">4 BHK</button>
+        <button class="filter-btn" onclick="filterProperties('commercial', event)">Commercial & Warehouse</button>
+      </div>
     </div>
   </header>
 
-  <!-- About Nilesh Profile Spotlight -->
-  <section id="about-nilesh" style="padding: 0 20px;">
+  <!-- About Nilesh Spotlight Section -->
+  <section id="about-nilesh" class="section-wrapper">
     <div class="nilesh-spotlight">
       <div class="nilesh-grid">
         <div class="nilesh-avatar-box">
           <div class="nilesh-avatar">
-            <!-- <img src="./dp.jpeg" alt="Nilesh Ji"> -->
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Nilesh Ji">
           </div>
           <h3>Nilesh</h3>
           <p>Senior Manager & Property Director</p>
         </div>
         <div class="nilesh-details">
           <h2>About Nilesh & Star Properties</h2>
-          <p>Star Properties is <strong>managed by Nilesh</strong>, operating out of <strong>Shop No. 274, Sector 10 HBC, Faridabad</strong>. With deep domain experience across both residential and commercial real estate, Nilesh Ji assists clients in buying, selling, and renting properties with 100% legal verification and complete paperwork transparency.</p>
+          <p>Star Properties is <strong>managed by Nilesh</strong>, operating out of <strong>Shop No. 274, Sector 10 HBC, Faridabad</strong>. With deep domain experience across residential and commercial deals, Nilesh Ji assists clients with 100% legal verification and complete paperwork transparency.</p>
           
           <div class="nilesh-features">
-            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> All Faridabad Sectors (1–89) Specialist</div>
-            <div class="feature-item"><i class="fa-solid fa-file-shield"></i> Verified Legal Paperwork Support</div>
-            <div class="feature-item"><i class="fa-solid fa-handshake-simple"></i> Transparent Dealings (Managed by Nilesh)</div>
-            <div class="feature-item"><i class="fa-solid fa-car"></i> On-Demand Property Site Visits</div>
+            <div class="feature-item"><i class="fa-solid fa-circle-check"></i> All Faridabad Sectors (1–89)</div>
+            <div class="feature-item"><i class="fa-solid fa-file-shield"></i> Legal Paperwork Support</div>
+            <div class="feature-item"><i class="fa-solid fa-handshake-simple"></i> Managed by Nilesh</div>
+            <div class="feature-item"><i class="fa-solid fa-car"></i> On-Demand Site Visits</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Verified Available Properties Section (Enhanced for Laptop Views) -->
+  <!-- Verified Available Properties Section -->
   <main class="container" id="properties">
     <div class="properties-header-bar">
       <h2 class="section-title">Verified Available Properties</h2>
@@ -103,9 +107,10 @@
         <ul class="info-list">
           <li><i class="fa-solid fa-user-check"></i> <div><strong>Managed By:</strong> Nilesh (Senior Manager)</div></li>
           <li><i class="fa-solid fa-phone"></i> <div><strong>Phone / WhatsApp:</strong> +91 9599634332</div></li>
+          <li><i class="fa-solid fa-envelope"></i> <div><strong>Email:</strong> nileshverma0002@gmail.com</div></li>
           <li><i class="fa-solid fa-location-dot"></i> <div><strong>Office Address:</strong> Shop No. 274, Sector 10 Housing Board Market, Pocket G, Sector 10 DLF, Faridabad, Haryana 121006</div></li>
           <li><i class="fa-solid fa-handshake"></i> <div><strong>Deals In:</strong> Sell, Purchase & Rent</div></li>
-          <li><i class="fa-solid fa-city"></i> <div><strong>Coverage:</strong> All Faridabad Sectors (Sector 1-89, Greater Faridabad / Neharpar, NIT)</div></li>
+          <li><i class="fa-solid fa-city"></i> <div><strong>Coverage:</strong> All Faridabad Sectors (1-89, Neharpar, NIT)</div></li>
         </ul>
       </div>
 
@@ -124,7 +129,7 @@
   <!-- Footer -->
   <footer>
     <div class="footer-content">
-      <p>&copy; Star Properties | Managed by Nilesh | Office: Shop No. 274, Sector 10 HBC, Faridabad | Phone: +91 9599634332</p>
+      <p>&copy; Star Properties | Managed by Nilesh | Email: nileshverma0002@gmail.com | Phone: +91 9599634332</p>
       <p class="developer-credit">
         Designed & Developed with ❤️ by <span>abhishek</span>
       </p>
@@ -139,7 +144,7 @@
     </div>
   </div>
 
-  <!-- Custom JavaScript -->
-  <script src="./script.js"></script>
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
